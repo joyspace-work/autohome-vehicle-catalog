@@ -13,6 +13,7 @@ autohome-vehicle-catalog/
 ├── docs/
 │   ├── internal-release.md  # 同事中文入口、后台字段与图库状态说明
 │   ├── history.md  # 合并的早期方案、结构变更、验收及迁移记录
+│   ├── maintenance-20261103.md  # 最新目录差异、实采样例及维护验收
 │   └── request-measurements.md  # 采集请求耗时及并发测量记录
 ├── schema/
 │   ├── fields.json  # 初始中文字段字典、来源ID和类型
@@ -86,6 +87,10 @@ autohome-vehicle-catalog/
         ├── test_primary_titles.py  # 品牌前缀去重、缺失组件及主字段修改边界检查
         └── test_single_select.py  # 三态与空值、LED规格和选配价格检查
 ```
+
+## 最近维护（2026-11-03）
+
+正式仓库：[joyspace-work/autohome-vehicle-catalog](https://github.com/joyspace-work/autohome-vehicle-catalog)。208项测试及Ruff通过；实时目录856在售＋34预售，共890车系。相对10月20日目录新增4个、移出范围12个、状态变化7个、配置集合变化50个。3车系7配置实采及完整导出验证通过。**飞书未刷新，表中数据仍为既有快照。**详见[维护验收](docs/maintenance-20261103.md)，不能把目录检查当作全量参数更新。
 
 ## 当前工程做什么
 
